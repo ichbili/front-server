@@ -1,0 +1,17 @@
+.nav-btn {
+    font-size: 1.8rem;
+    font-family: 'Prosto One', cursive;
+    letter-spacing: 0.2rem;
+    display: inline-block;
+    text-decoration: none;
+    color: $color-white;
+    margin-left: 2rem;
+    text-transform: uppercase;
+    &:hover {
+        color: red;
+    }
+}
+.is-active {
+    border-bottom: 2px solid $color-white;
+}
+

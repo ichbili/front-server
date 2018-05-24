@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Prosto+One:100,300,400,700,900");
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #fff;
+  padding: 6rem;
+  box-sizing: border-box;
+  background-color: #4a6b8a; }
+  body:before {
+    content: "";
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    backface-visibility: hidden;
+    background-image: url(../img/gplaypattern_@2X.png);
+    /* New stuff down here. */
+    opacity: 0.7;
+    filter: grayscale(100%) invert(100%); }
+  body:after {
+    content: "";
+    position: fixed;
+    z-index: -1;
+    backface-visibility: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, #31597e, transparent 80%); }
+
+.nav-btn {
+  font-size: 1.8rem;
+  font-family: 'Prosto One', cursive;
+  letter-spacing: 0.2rem;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  margin-left: 2rem;
+  text-transform: uppercase; }
+  .nav-btn:hover {
+    color: red; }
+
+.is-active {
+  border-bottom: 2px solid #fff; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+  padding-left: 2.5rem; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem)/2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc(((100% - 2 * 6rem) / 3) * 2 + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc(((100% - 3 * 6rem) / 4) * 2 + 6rem); }
+  .row .col-3-of-4 {
+    width: calc(((100% - 3 * 6rem) / 4) * 3 + 2 * 6rem); }

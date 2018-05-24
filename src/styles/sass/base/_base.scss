@@ -1,0 +1,49 @@
+// *, *::after, *::before{
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: inherit;
+// }
+html {
+    // this is where we define 1rem
+    font-size: 62.5%;
+}
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: $color-white;
+    padding: 6rem;
+    box-sizing: border-box;
+    background-color: rgb(74, 107, 138);
+    
+
+    &:before {
+        content: "";
+        position: fixed;
+        z-index: -1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        backface-visibility: hidden;
+        background-image: url(../img/gplaypattern_@2X.png);
+      
+        /* New stuff down here. */
+        opacity: 0.7;
+        filter: grayscale(100%) invert(100%);
+      }
+    &:after {
+        content: "";
+        position: fixed;
+        z-index: -1;
+        backface-visibility: hidden;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(to right bottom, rgb(49, 89, 126) , transparent 80%);
+      }
+}
+
+  
