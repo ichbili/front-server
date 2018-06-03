@@ -12,12 +12,12 @@ import NavHeader from '../components/NavHeader';
 
 export default class AppRouter extends React.Component {
   state = {
-    home: undefined,
-    about: undefined,
-    projects: undefined,
-    blog: undefined,
-    hobby: undefined,
-    contact: undefined
+    home: {},
+    about: {},
+    projects: {},
+    blog: {},
+    hobby: {},
+    contact: {}
   };
   componentDidMount() {
     axios.get(`http://localhost:3000/api/getconfig`).then(res => {
